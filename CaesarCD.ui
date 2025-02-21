@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>709</width>
+    <height>491</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="decryptbutton">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>250</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+  padding: 8px 25px;
+
+  text-align: center;
+  outline: none;
+  color: #fff;
+  background-color: 	#008000;
+  border: none;
+  border-radius: 15px;
+font: 15pt &quot;Rockwell&quot;;
+}
+
+QPushButton:hover {background-color: #006400}</string>
+   </property>
+   <property name="text">
+    <string>Decrypt</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>711</width>
+     <height>491</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>Backg.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>40</y>
+     <width>301</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(253, 250, 255);
+font: 30pt &quot;Rockwell&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Atbash Cipher</string>
+   </property>
+   <property name="margin">
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>50</y>
+     <width>291</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>___________________________________</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="plaintext">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>360</y>
+     <width>521</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">  padding: 5px 20px;
+
+  text-align: center;
+  outline: none;
+  background-color: 	#f7f7f7;
+  border: none;
+  border-radius: 15px;
+font: 14pt &quot;Futura&quot;;</string>
+   </property>
+   <property name="placeholderText">
+    <string>The Plaintext (Result)</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ciphertext">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>140</y>
+     <width>491</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+  padding: 8px 20px;
+
+  text-align: center;
+  outline: none;
+  background-color: 	#f7f7f7;
+  border: 2px solid rgb(194, 191, 196);
+  border-radius: 15px;
+font: 14pt &quot;Futura&quot;;
+}
+QLineEdit:hover{
+border: 2px solid rgb(70, 69, 71);
+}
+QlineEdit:active{
+border: 2px solid rgb(0, 116, 0);
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>Enter the Ciphertext:</string>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>decryptbutton</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_5</zorder>
+  <zorder>plaintext</zorder>
+  <zorder>ciphertext</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
